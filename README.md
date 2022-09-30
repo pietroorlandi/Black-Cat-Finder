@@ -7,4 +7,12 @@ I have done this system that recognizes if the black cat is in the picture becau
 ## Section
 The project initially is concerned with the creation of the recognition system, then when has recognized the black cat, it will give the food from the feeder.
 
-L'idea di questo progetto è quella di riuscire, partendo da immagini RGB 96x96, di classificare la presenza o meno del gatto nero all'interno dell'immagine. Il sistema servirebbe per integrarlo poi a un dispenser di cibo, che in base alla presenza o meno del gatto nero, distribuisce il cibo corretto.
+## Data Collection
+I have collected the photo through the ESP32CAM, the photo are 96x96 RGB888, so 24 of bit-depth.
+##### Samples of some photos
+<p align="center">
+<img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/abbastanza_buone_mima%20(79).jpg" width="140">
+<img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/mimone_e_umani1%20(133).jpg" width="140">
+<img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/prova6%20(4).jpg" width="140">
+<img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/prova1_non_mima%20(13).jpg" width="140">
+</p>
