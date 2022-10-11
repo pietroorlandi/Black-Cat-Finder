@@ -9,8 +9,9 @@ The project initially is concerned with the creation of the recognition system, 
 
 ## Data Collection
 I have collected the photo through the ESP32CAM, the photo are 96x96 saved on JPEG format.
-##### Samples of some photos
+
 <p align="center">
+  <b> Examples of some photos </b></br>
 <img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/abbastanza_buone_mima%20(79).jpg" width="140">
 <img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/mimone_e_umani1%20(133).jpg" width="140">
 <img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/prova6%20(4).jpg" width="140">
