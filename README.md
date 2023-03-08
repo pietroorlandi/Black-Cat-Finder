@@ -1,8 +1,10 @@
 # Cat Classification
+### Reason of the project
+The project is due to a personal need: _my black cat_ has an eating disorder and needs to eat only a more expensive type of food. However, I own several cats and would like this food to be dispensed only when the black cat is present.
 
 ## Goal
 The goal of this project is to recognize if in the photo there is my black cat. In essence the project concerns about image classifcation one-vs-rest, where the positive class is the prensence of my black cat, and the negative is all the rest (other cat different the black, background, people, ...). </br>
-I have done this system that recognizes if the black cat is in the picture because black cat has a food problem and it should eat only a specific type (more expensive) of food. </br>
+
 
 ## Section
 The project initially is concerned with the creation of the recognition system, then when has recognized the black cat, it will give the food from the feeder.
@@ -19,5 +21,5 @@ I have collected the photo through the ESP32CAM, the photo are 96x96 saved on JP
 </p>
 
 ### Data Augmentation
-Since that there was only 600 samples/photos for each class, it has been done data-augmentation through *ImageDataGenerator*. In particular, each new image can be randomly flipped, zoomed and rotated in a range of 30 degrees. <br>
-Through data-augmentation we can increase the number of samples in the dataset by introducing some synthetic data
+Since that there was only 600 samples/photos for each class, it has been done data-augmentation technique to artificially increase the size of dataset. In particular, each new image can be randomly flipped, zoomed and rotated in a range of 30 degrees. <br>
+
