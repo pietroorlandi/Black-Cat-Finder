@@ -21,5 +21,14 @@ I have collected the photo through the _ESP32CAM_, the photo are 96x96 saved on 
 </p>
 
 ### Data Augmentation
-Since that there was only 600 samples/photos for each class, it has been done data-augmentation technique to artificially increase the size of dataset. In particular, each new image can be randomly flipped, zoomed and rotated in a range of 30 degrees. <br>
+Since that there was only about 750 samples/images for each class, it has been done data-augmentation technique to artificially increase the size of dataset. <br>
+Data Augmentation was done using [Nvidia DALI](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/) on the fly (without saving the augmented images) and it has been done this image transformations:
+- _HSV transformations_ to change the color of the image
+- Change of _contrast_
+- Geometric transformations of the image (_rotation_, _scaling_, _flipping_, and _shearing_)
+The results of the some possible augmented images are here:
+<p align="center">
+  <b> Examples of some photos </b></br>
+<img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/screen_mima_aug.png" width="600">
 
+</p>
