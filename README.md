@@ -10,7 +10,7 @@ The goal of this project is to recognize if in the photo there is my black cat. 
 The project initially is concerned with the creation of the recognition system, then when has recognized the black cat, it will give the food from the feeder.
 
 ### Data Collection
-I have collected the photo through the ESP32CAM, the photo are 96x96 saved on JPEG format.
+I have collected the photo through the _ESP32CAM_, the photo are 96x96 saved on JPEG format. The photos were taken personally trying to vary the angle of that photo a little bit and several days apart so as to vary the light conditions a little. Other changes will be introduced artificially with data-warping techniques.
 
 <p align="center">
   <b> Examples of some photos </b></br>
