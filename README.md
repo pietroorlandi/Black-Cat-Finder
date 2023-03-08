@@ -28,7 +28,7 @@ Data Augmentation was done using [Nvidia DALI](https://docs.nvidia.com/deeplearn
 - Geometric transformations of the image (_rotation_, _scaling_, _flipping_, and _shearing_)
 The results of the some possible augmented images are here:
 <p align="center">
-  <b> Examples of some photos </b></br>
+  <b> Examples of the results of data-augmentation </b></br>
 <img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/screen_mima_aug.png" width="600">
 
 </p>
