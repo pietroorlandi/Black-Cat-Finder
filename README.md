@@ -2,14 +2,14 @@
 ### Reason of the project
 The project is due to a personal need: _my black cat_ has an eating disorder and needs to eat only a more expensive type of food. However, I own several cats and would like this food to be dispensed only when the black cat is present.
 
-## Goal
+### Goal
 The goal of this project is to recognize if in the photo there is my black cat. In essence the project concerns about image classifcation one-vs-rest, where the positive class is the prensence of my black cat, and the negative is all the rest (other cat different the black, background, people, ...). </br>
 
 
-## Section
+### Section
 The project initially is concerned with the creation of the recognition system, then when has recognized the black cat, it will give the food from the feeder.
 
-## Data Collection
+### Data Collection
 I have collected the photo through the ESP32CAM, the photo are 96x96 saved on JPEG format.
 
 <p align="center">
