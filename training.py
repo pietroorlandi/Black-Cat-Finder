@@ -23,6 +23,7 @@ from keras.callbacks import ModelCheckpoint, EarlyStopping
 
 
 BATCH_SIZE = 32
+EPOCHS = 75
 tfrecord_train = r"dataset_train.tfrecord"
 tfrecord_idx_train = r"idx_files/dataset_train.idx"
 
@@ -120,17 +121,24 @@ def main():
         model.add(layers.MaxPooling2D((2, 2)))
         model.add(layers.Flatten())
         model.add(layers.Dense(64, activation='relu'))
-        model.add(Dropout(0.4))
+        model.add(Dropout(0.5))
         model.add(Dense(1, activation='sigmoid'))
 
         model.compile(loss=tf.keras.losses.BinaryCrossentropy(from_logits=True), optimizer='adam', metrics=['accuracy'])
+
+        # Callback declariations
+        early_stopping = EarlyStopping(patience=25, monitor="val_loss", verbose=1)
+        filepath_model = r"cnn_cat_model.h5"
+        checkpoint = ModelCheckpoint(filepath_model, monitor='val_loss',mode='min',save_best_only=True,verbose=1)
+
 
         history = model.fit(
                 dataset_train,
                 validation_data = dataset_validation,
                 validation_steps=1,
                 steps_per_epoch=1850//BATCH_SIZE,
-                epochs=40,
+                epochs=EPOCHS,
+                callbacks=[checkpoint, early_stopping]
                 )
         return model, history
     
