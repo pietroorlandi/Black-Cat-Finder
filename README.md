@@ -25,7 +25,7 @@ Since that there was only about 750 samples/images for each class, it has been d
 Data Augmentation was done using [Nvidia DALI](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/) on the fly (without saving the augmented images) and it has been done this image transformations:
 - _HSV transformations_ to change the color of the image
 - Change of _contrast_
-- Geometric transformations of the image (_rotation_, _scaling_, _flipping_, and _shearing_)
+- Geometric transformations of the image (_rotation_, _scaling_, _horizontal flipping_, and _shearing_)
 The results of the some possible augmented images are here:
 <p align="center">
   <b> Examples of the results of data-augmentation </b></br>
