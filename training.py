@@ -21,7 +21,7 @@ from keras import backend as K
 from keras.callbacks import ModelCheckpoint, EarlyStopping
 
 
-
+SIZE_DATASET = 3802
 BATCH_SIZE = 32
 EPOCHS = 75
 tfrecord_train = r"dataset_train.tfrecord"
@@ -136,7 +136,7 @@ def main():
                 dataset_train,
                 validation_data = dataset_validation,
                 validation_steps=1,
-                steps_per_epoch=1850//BATCH_SIZE,
+                steps_per_epoch=3802//BATCH_SIZE,
                 epochs=EPOCHS,
                 callbacks=[checkpoint, early_stopping]
                 )
