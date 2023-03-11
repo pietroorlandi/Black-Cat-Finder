@@ -1,4 +1,10 @@
 # Cat Classification
+## Demo
+<p align="left">
+
+<img src="https://github.com/pietroorlandi/Cat-Classification/blob/main/img/demo.gif" width="400">
+</p>
+
 ### Reason of the project
 The project is due to a personal need: _my black cat_ has an eating disorder and needs to eat only a more expensive type of food. However, I own several cats and would like this food to be dispensed only when the black cat is present.
 
