@@ -1,4 +1,4 @@
-# Cat Classification
+# Black Cat Finder
 ## Demo
 <p align="left">
 
